@@ -22,3 +22,11 @@ it('testing balabala', async () => {
 ...
 }, 70000); // milliseconds
 ```
+
+- How to run all tests in a single test file:
+  `npm test -- sum.test.js`
+
+  - the `--` means the end of options for npm, so everything after this is passed into the command being run (in this case, jest)
+
+- How to run 1 test in a single test file:
+  `npm test -- testFile.js -t "properly adds two numbers"`
